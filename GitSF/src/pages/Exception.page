@@ -1,5 +1,5 @@
 <apex:page showHeader="false" title="{!$Label.site.error2}" cache="false">
-    <apex:form>
+    
   <apex:composition template="{!$Site.Template}">
     <apex:define name="body">
       <center>
@@ -35,5 +35,5 @@
       </center>
     </apex:define>
   </apex:composition>
-</apex:form>
+
 </apex:page>
