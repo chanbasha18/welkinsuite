@@ -19,7 +19,7 @@ public class Vision {
         string contentType = HttpFormBuilder.GetContentType();
         //  Compose the form
         string form64 = '';
-
+		//sample for testing data 
         form64 += HttpFormBuilder.WriteBoundary();
         form64 += HttpFormBuilder.WriteBodyParameter('modelId', EncodingUtil.urlEncode(model, 'UTF-8'));
         form64 += HttpFormBuilder.WriteBoundary();
@@ -43,6 +43,8 @@ public class Vision {
         httpRequest.setTimeout(120000);
         httpRequest.setHeader('Authorization','Bearer ' + access_token);
         httpRequest.setEndpoint(PREDICT);
+
+		//sample quote
 
         Http http = new Http();
         List<Prediction> predictions = new List<Prediction>();
